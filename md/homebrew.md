@@ -56,6 +56,8 @@ Pour vérifier si des mises à jour sont disponibles pour les commandes install�
 brew outdated
 ```
 
+Voici les options disponibles :
+
 | Option 		| Détail 															|
 | :------------	| :----------------------------------------------------------------	|
 | *--quiet*		| Affiche uniquement les noms des paquets à mettre à jour.			|

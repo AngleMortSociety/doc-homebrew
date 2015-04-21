@@ -12,6 +12,26 @@ Notez qu’il existe d'autres programmes similaires à Homebrew :
 
 Toutefois, Homebrew devient de plus en plus populaire, il est très léger, rapide et maniable.
 
+## Pré-requis
+
+Il est nécessaire d'avoir la configuration suivante pour utiliser Homebrew :
+
+- Un Mac équipé d'un processeur Intel
+- OS X 10.6 ou supérieur
+- Les outils de ligne de commande pour Xcode (*Command Line Tools for Xcode*) :  
+	Il est possible de les installer avec la commande suivante :  
+	`xcode-select --install`  
+	Ou de télécharger ces outils à l'adresse suivante : <https://developer.apple.com/downloads>
+- Un Terminal compatible Bourne-Shell (*bash* ou *zsh*)
+
+Si vous devez installer des paquets qui nécessitent l'utilisation des composants X11, il est nécessaire d'installer [XQuartz][].
+
+De plus, si vous devez utiliser des paquets nécessitant [Java][], il faudra installer ce logiciel et entrer la commande suivante dans le Terminal :
+
+```Bash
+Java Developer Update
+```
+
 ## Installation
 
 Il est nécessaire de copier/coller la ligne suivante dans le Terminal (les droits *admin* ne sont pas nécessaires) :
@@ -69,6 +89,14 @@ Il est possible d'utiliser une expression régulière pour rechercher un paquet 
 brew search /REGEX/
 ```
 
+Afin de lister tous les paquets disponibles qu'il est possible d'installer avec Homebrew :
+
+``` bash
+brew search
+```
+
+Il existe aussi une interface web pour la recherche de paquets : [Braumeister][].
+
 ## Installation de paquets
 
 Pour installer un paquet :
@@ -76,6 +104,14 @@ Pour installer un paquet :
 ``` bash
 brew install <paquet>
 ```
+
+En cas de problème lors d'une installation, il est possible d'utiliser la commande suivante :
+
+``` bash
+brew doctor
+```
+
+Les messages d'erreurs vous aideront ainsi à trouver les problèmes à corriger.
 
 ## Suppression de paquets
 
@@ -137,4 +173,7 @@ Il existe une interface graphique qui permet d'utiliser Homebrew, il s'agit de [
 [Apple]: http://www.apple.com/fr "Apple - Site officiel"
 [MacPorts]: https://www.macports.org "MacPorts - Site officiel"
 [Fink]: http://finkproject.org "Fink - Site officiel"
+[XQuartz]: https://xquartz.macosforge.org/landing/ "XQuartz - Site officiel"
+[Java]: http://www.oracle.com/technetwork/java/javase/downloads/index.html "Java - Site officiel"
 [CakeBrew]: https://www.cakebrew.com "CakeBrew - Site officiel"
+[Braumeister]: http://braumeister.org "Braumeister - Site officiel"

@@ -40,15 +40,17 @@ Il est nécessaire de copier/coller la ligne suivante dans le Terminal (les droi
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-## Mise à jour des paquets
+## Mise à jour de Homebrew
 
-Pour récupérer la dernière version de Homebrew et de toutes ses commandes sur Github :
+Homebrew doit se mettre à jour avec le dépôt [GitHub][] afin de vous permettre de rechercher, d'installer ou de mettre à jour des paquets, comme vous le feriez sous Linux avec ce genre de commandes : `apt-get update`.
 
 ``` bash
 brew update
 ```
 
-Attention, il est nécessaire d'exécuter cette commande quand on souhaite chercher, installer ou mettre à jour des paquets avec Homebrew.
+Il est à noter qu'il est nécessaire d'exécuter cette commande pour chaque session où vous auriez besoin d'utiliser Homebrew afin de récupérer les dernières références disponibles.
+
+## Mise à jour des paquets
 
 Pour vérifier si des mises à jour sont disponibles pour les commandes installées avec Homebrew :
 
@@ -69,7 +71,7 @@ Afin de mettre à jour toutes les commandes :
 brew upgrade
 ```
 
-Il est possible de mettre à jour uniquement certaines commandes :
+Il est possible de ne mettre à jour que certaines commandes :
 
 ``` bash
 brew upgrade <paquet>
@@ -151,7 +153,7 @@ Une option permet d'ouvrir le site Internet de `brew` dans le navigateur par dé
 brew home
 ```
 
-Il est également possible d'ouvrir le site Internet d'une commande installée avec Homebrew :
+Il est également possible d'ouvrir le site Internet d'une commande :
 
 ``` bash
 brew home <paquet>
@@ -177,5 +179,6 @@ Il existe une interface graphique qui permet d'utiliser Homebrew, il s'agit de [
 [Fink]: http://finkproject.org "Fink - Site officiel"
 [XQuartz]: https://xquartz.macosforge.org/landing/ "XQuartz - Site officiel"
 [Java]: http://www.oracle.com/technetwork/java/javase/downloads/index.html "Java - Site officiel"
+[GitHub]: https://github.com "GitHub - Site officiel"
 [CakeBrew]: https://www.cakebrew.com "CakeBrew - Site officiel"
 [Braumeister]: http://braumeister.org "Braumeister - Site officiel"

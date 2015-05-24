@@ -5,7 +5,7 @@
 
 [Homebrew][] est un gestionnaire de paquets pour OS X. En effet, par défaut, il n'est pas possible d'installer de nouveaux programmes en ligne de commande via le Terminal sur le système d'[Apple][] comme il est courant de le faire sur Linux avec des commandes telles que `apt-get` ou `aptitude`. Homebrew répond à cette problématique via la commande du Terminal `brew` qui se comporte de manière très similaire aux autres gestionnaires de paquets nommés précédemment. Homebrew installe les paquets dans leurs propres dossiers et crée des liens symboliques de leurs fichiers vers `/usr/local/`. Aucun fichier n'est installé en dehors de son préfixe et vous pouvez les placer où vous le souhaitez.
 
-Notez qu’il existe d'autres programmes similaires à Homebrew :
+Notez qu’il existe d'autres programmes similaires :
 
 - [MacPorts][], ou
 - [Fink][]

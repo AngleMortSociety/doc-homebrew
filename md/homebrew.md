@@ -19,9 +19,9 @@ Il est nécessaire d'avoir la configuration suivante pour utiliser Homebrew :
 - Un Mac équipé d'un processeur Intel
 - OS X 10.6 ou supérieur
 - Les outils de ligne de commande pour Xcode (*Command Line Tools for Xcode*) :  
-	Il est possible de les installer avec la commande suivante :  
-	`xcode-select --install`  
-	Ou de télécharger ces outils à l'adresse suivante : <https://developer.apple.com/downloads>
+    Il est possible de les installer avec la commande suivante :  
+    `xcode-select --install`  
+    Ou de télécharger ces outils à l'adresse suivante : <https://developer.apple.com/downloads>
 - Un Terminal compatible Bourne-Shell (*bash* ou *zsh*)
 
 Si vous devez installer des paquets qui nécessitent l'utilisation des composants X11, il est nécessaire d'installer [XQuartz][].
@@ -60,10 +60,10 @@ brew outdated
 
 Voici les options disponibles :
 
-| Option 		| Détail 															|
-| :------------	| :----------------------------------------------------------------	|
-| *--quiet*		| Affiche uniquement les noms des paquets à mettre à jour.			|
-| *--verbose*	| Affiche les informations détaillées des paquets à mettre à jour.	|
+| Option        | Détail                                                            |
+| :------------ | :---------------------------------------------------------------- |
+| *--quiet*     | Affiche uniquement les noms des paquets à mettre à jour.          |
+| *--verbose*   | Affiche les informations détaillées des paquets à mettre à jour.  |
 
 Afin de mettre à jour toutes les commandes :
 

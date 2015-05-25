@@ -9,8 +9,8 @@ Ce document est sous licence [**Creative Commons**][] (CC BY-SA). Toute personne
 
 ## Contributeurs
 
-- kCell									: écriture, tests
-- Jean-Baptiste Lacour, alias Moonjb	: relecture, correction
+- kCell                                 : écriture, tests
+- Jean-Baptiste Lacour, alias Moonjb    : relecture, correction
 
 [Homebrew]: http://brew.sh/index_fr.html "Homebrew - Site officiel"
 [**Creative Commons**]: http://creativecommons.org/licenses/by-sa/4.0/ "CC BY-SA"

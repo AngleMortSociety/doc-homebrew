@@ -18,9 +18,9 @@ Il est nécessaire d'avoir la configuration suivante pour utiliser Homebrew :
 
 - Un Mac équipé d'un processeur Intel
 - OS X 10.6 ou supérieur
+- Xcode installé via le Mac App Store ainsi que sa licence acceptée (à l'ouverture du logiciel)
 - Les outils de ligne de commande pour Xcode (*Command Line Tools for Xcode*) :  
-    Il est possible de les installer avec la commande suivante :  
-    `xcode-select --install`  
+    Il est possible de les installer avec la commande suivante : `xcode-select --install`  
     Ou de télécharger ces outils à l'adresse suivante : <https://developer.apple.com/downloads>
 - Un Terminal compatible Bourne-Shell (*bash* ou *zsh*)
 
@@ -39,6 +39,14 @@ Il est nécessaire de copier/coller la ligne suivante dans le Terminal (les droi
 ``` bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
+
+Attention, depuis El Capitan, il est nécessaire une fois l'installation terminée d'entrer la commande suivante :
+
+``` bash
+brew doctor
+```
+
+Ceci permet d'apporter des modifications sur les droits de dossiers du système, ce qui rend possible l'installation des paquets Homebrew.
 
 ## Mise à jour de Homebrew
 

@@ -40,14 +40,6 @@ Il est nécessaire de copier/coller la ligne suivante dans le Terminal (les droi
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Attention, depuis El Capitan, il est nécessaire une fois l'installation terminée d'entrer la commande suivante :
-
-``` bash
-sudo chown -R $(whoami):admin /usr/local
-```
-
-Ceci permet d'apporter des modifications sur les droits de dossiers du système, ce qui rend possible l'installation des formules Homebrew.
-
 ## Mise à jour de Homebrew
 
 Homebrew doit se mettre à jour avec les dépôts [GitHub][] afin de vous permettre de rechercher, d'installer ou de mettre à jour des formules, comme vous le feriez sous Linux avec ce genre de commandes : `apt-get update`.

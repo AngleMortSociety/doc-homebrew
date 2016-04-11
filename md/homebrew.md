@@ -43,7 +43,7 @@ ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/
 Attention, depuis El Capitan, il est nécessaire une fois l'installation terminée d'entrer la commande suivante :
 
 ``` bash
-brew doctor
+sudo chown -R $(whoami):admin /usr/local
 ```
 
 Ceci permet d'apporter des modifications sur les droits de dossiers du système, ce qui rend possible l'installation des paquets Homebrew.
@@ -57,35 +57,6 @@ brew update
 ```
 
 Il est à noter qu'il est nécessaire d'exécuter cette commande pour chaque session où vous auriez besoin d'utiliser Homebrew afin de récupérer les dernières références disponibles.
-
-## Mise à jour des paquets
-
-Pour vérifier si des mises à jour sont disponibles pour les commandes installées avec Homebrew :
-
-``` bash
-brew outdated
-```
-
-Voici les options disponibles :
-
-| Option        | Détail                                                            |
-| :------------ | :---------------------------------------------------------------- |
-| *--quiet*     | Affiche uniquement les noms des paquets à mettre à jour.          |
-| *--verbose*   | Affiche les informations détaillées des paquets à mettre à jour.  |
-
-Afin de mettre à jour toutes les commandes :
-
-``` bash
-brew upgrade
-```
-
-Il est possible de ne mettre à jour que certaines commandes :
-
-``` bash
-brew upgrade <paquet>
-```
-
-Il est à noter que les options valides avec la commande `install` sont aussi disponibles avec cette commande `upgrade`.
 
 ## Recherche
 
@@ -134,6 +105,35 @@ brew remove <paquet>
 ```
 
 En lieu et place de `remove` il est possible d'utiliser `rm` ou `uninstall` ainsi que l'option *--force*.
+
+## Mise à jour des paquets
+
+Pour vérifier si des mises à jour sont disponibles pour les commandes installées avec Homebrew :
+
+``` bash
+brew outdated
+```
+
+Voici les options disponibles :
+
+| Option        | Détail                                                            |
+| :------------ | :---------------------------------------------------------------- |
+| *--quiet*     | Affiche uniquement les noms des paquets à mettre à jour.          |
+| *--verbose*   | Affiche les informations détaillées des paquets à mettre à jour.  |
+
+Afin de mettre à jour toutes les commandes :
+
+``` bash
+brew upgrade
+```
+
+Il est possible de ne mettre à jour que certaines commandes :
+
+``` bash
+brew upgrade <paquet>
+```
+
+Il est à noter que les options valides avec la commande `install` sont aussi disponibles avec cette commande `upgrade` (voir le manuel pour plus de détails).
 
 ## Diverses informations
 

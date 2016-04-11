@@ -1,6 +1,8 @@
 
 ## Quelques formules
 
+Avant d'installer une formule, n'oubliez pas de mettre à jour les dépôts avec la commande suivante : `brew update`.
+
 ### license
 
 Génère des licences à partir de la ligne de commande.
@@ -21,7 +23,7 @@ brew install nishanths/tap/license
 
 #### Licences disponibles
 
-Afin d'afficher toutes les licences disponibles de cette commande, tapez la commande `license ls`, cette liste devrait s'afficher :
+Afin d'afficher toutes les licences disponibles de cette formule, tapez la commande `license ls`, cette liste devrait s'afficher :
 
 | Argument          | Type de licence                                       |
 | :---------------- | :---------------------------------------------------- |
@@ -43,15 +45,15 @@ Afin d'afficher toutes les licences disponibles de cette commande, tapez la comm
 
 #### Aide
 
-Pour afficher l'aide de la commande :
+Pour afficher l'aide de la formule :
 
 ``` bash
 license help
 ```
 
-#### Mettre à jour la commande
+#### Mettre à jour la formule
 
-Il est préférable de mettre à jour toutes les commandes avec `brew update`. Néanmoins, si vous désirez mettre à jour uniquement cette commande :
+Il est préférable de mettre à jour toutes les formules avec `brew upgrade`. Néanmoins, si vous désirez mettre à jour uniquement cette formule :
 
 ``` bash
 license update
@@ -59,7 +61,7 @@ license update
 
 #### Version
 
-Afin de connaître la version de la commande installée actuellement sur votre système :
+Afin de connaître la version de la formule installée actuellement sur votre système :
 
 ``` bash
 license version
@@ -97,30 +99,30 @@ license -y 2013 -n Alice isc
 
 ### youtube-dl
 
-Cette commande permet de télécharger des vidéos uniques ou des listes de lecture provenant de Youtube.
+Cette formule permet de télécharger des vidéos uniques ou des listes de lecture provenant de Youtube.
 
-Pour installer cette commande, rien de plus simple :
+Pour installer cette formule, rien de plus simple :
 
 ``` bash
 brew install youtube-dl
 ```
 
-Il suffit alors d'indiquer à cette commande l'adresse où se situe la vidéo que vous souhaitez récupérer :
+Il suffit alors d'indiquer à cette formule l'adresse où se situe la vidéo que vous souhaitez récupérer :
 
 ``` bash
-youtube-dl [adresse youtube]
+youtube-dl <adresse youtube>
 ```
 
 #### Options
 
 Les options disponibles sont les suivantes :
 
-| Option        | Signification | Détail                                                                                            |
-| :------------ | :------------ | :------------------------------------------------------------------------------------------------ |
-| *-h*          | *help*        | Affiche l'aide complète de la commande.                                                           |
-| *-U*          | *Update*      | Permet de récupérer la dernière version disponible, attention les droits admin sont nécessaires.  |
-| *-i*          | *ignore*      | Continue le téléchargement tout en ignorant les erreurs éventuelles.                              |
-| *--version*   | *version*     | Affiche la version de la commande installée actuellement sur votre système.                       |
+| Option        | Signification | Détail                                                                                            		|
+| :------------ | :------------ | :-------------------------------------------------------------------------------------------------------- |
+| *-h*          | *help*        | Affiche l'aide complète de la formule.                                                            		|
+| *-U*          | *Update*      | Permet de récupérer la dernière version disponible, attention les droits admin peuvent être nécessaires.  |
+| *-i*          | *ignore*      | Continue le téléchargement tout en ignorant les erreurs éventuelles.                              		|
+| *--version*   | *version*     | Affiche la version de la formule installée actuellement sur votre système.                        		|
 
 Beaucoup d'autres options sont disponibles, vous pouvez les consulter avec l'option *h*, attention toutefois aux options dépréciées.
 
@@ -129,13 +131,13 @@ Beaucoup d'autres options sont disponibles, vous pouvez les consulter avec l'opt
 Il est possible de limiter la bande passante à 50ko lors des téléchargements :
 
 ``` bash
-youtube-dl [adresse youtube] --rate-limit 50K
+youtube-dl <adresse youtube> --rate-limit 50K
 ```
 
 Dans le cas du téléchargement d'une liste de lecture, vous pouvez ainsi renommer directement les fichiers à votre convenance avec l'option *o* (pour *output*) :
 
 ``` bash
-youtube-dl [adresse youtube] -o "./%(playlist_index)s - %(title)s.%(ext)s"
+youtube-dl <adresse youtube> -o "./%(playlist_index)s - %(title)s.%(ext)s"
 ```
 
 Les fichiers seront nommés de cette façon : **01 - nom.extension**. Notez que le `./` indique de télécharger les fichiers dans le dossier courant.
